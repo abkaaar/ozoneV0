@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import { Button } from "@/components/ui/button";
 import WhyChooseUs from "@/components/Wcu";
@@ -187,6 +188,44 @@ export default function Home() {
       <section>
         <WhyChooseUs/>
       </section>
+      <section className="relative overflow-hidden">
+      {/* Orange background element */}
+      <div className="absolute top-4 left-6 w-1/4 h-64 bg-[#FF8A00] transform origin-top" />
+
+      <div className="container relative mx-auto px-4 py-12 md:py-24">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
+          <div className="">
+            <div className="relative z-10">
+            <Image
+              src="/assets/investment-hero.png"
+              alt="Business professionals shaking hands in an office setting"
+              width={400}
+              height={300}
+              className=""
+              priority
+            />
+          </div> 
+          </div>
+         
+
+          <div className="space-y-6 lg:pl-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+              Shape the Future, <span className="block">Secure Your Returns</span>
+            </h1>
+
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
+              Invest in the green revolution. Whether by shares or ROI, your investment drives sustainability while
+              delivering great returns.
+            </p>
+
+            <Button size="lg" className="bg-black hover:bg-black/90 text-white">
+              Investment Opportunities
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+      <Footer />
 
     </>
   );
