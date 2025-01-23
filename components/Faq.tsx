@@ -2,9 +2,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export function FAQSection() {
   return (
-    <section className="w-full px-16 py-12 flex flex-col md:flex-row gap-4 justify-between">
+    <section className="w-full px-8 py-12 flex flex-col md:flex-row gap-4 justify-between">
       <div className="mb-10">
-        <h2 className="text-5xl font-medium mb-4">Frequently Asked <br /> Questions</h2>
+        <h2 className="text-3xl md:text-5xl mb-4">Frequently Asked <br /> Questions</h2>
         <p className="text-xl text-muted-foreground">Got questions? We have got answers.</p>
       </div>
 <div>

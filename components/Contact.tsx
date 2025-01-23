@@ -31,10 +31,10 @@ const ContactSection = () => {
             }}
           />
     <div className='text-center py-8 text-white'>
-        <h1 className='text-4xl font-semibold mb-3'>Send Us a Message</h1>
-        <p className='text-base font-medium'> Fill out the form below, and our team will get back to you within 24-48 hours.</p>
+        <h1 className='text-3xl md:text-4xl mb-3'>Send Us a Message</h1>
+        <p className='text-base'> Fill out the form below, and our team will get back to you within 24-48 hours.</p>
     </div>
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-3xl mx-auto sm:px-6 lg:px-8 relative">
        <ContactForm/>
       </div>
     </div>

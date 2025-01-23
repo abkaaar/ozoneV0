@@ -15,13 +15,13 @@ export function ContactForm({
       <Card>
         <CardContent>
           <form>
-            <div className="flex flex-col gap-6 p-6">
+            <div className="flex flex-col gap-6 py-3 md:p-6">
               <div className="grid gap-2">
                 <Input
                   id="fname"
                   type="text"
                   placeholder="First Name (Required)"
-                  className="rounded-none py-6"
+                  className="rounded-none  py-6 text-sm"
                   required
                 />
               </div>
@@ -30,7 +30,7 @@ export function ContactForm({
                   id="lname"
                   type="text"
                   placeholder="Last Name (Required)"
-                  className="rounded-none py-6"
+                  className="rounded-none  py-6 text-sm"
                   required
                 />
               </div>
@@ -39,7 +39,7 @@ export function ContactForm({
                   id="email"
                   type="text"
                   placeholder="Email Address (Optional)"
-                  className="rounded-none py-6"
+                  className="rounded-none  py-6 text-sm"
                   required
                 />
               </div>
@@ -48,7 +48,7 @@ export function ContactForm({
                   id="phone"
                   type="tel"
                   placeholder="Phone Number (Required)"
-                  className="rounded-none py-6"
+                  className="rounded-none  py-6 text-sm"
                   required
                 />
               </div>
@@ -57,7 +57,7 @@ export function ContactForm({
                   id="name"
                   type="text"
                   placeholder="Message (Required)"
-                  className="rounded-none py-6"
+                  className="rounded-none  py-6 text-sm"
                   required
                 />
               </div>

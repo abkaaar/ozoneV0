@@ -26,7 +26,7 @@ const BlogSection = () => {
     <div className="w-full max-w-7xl mx-auto px-4">
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-3xl font-bold">Blog</h1>
-        <Button variant="outline" className='rounded-none px-6 py-6'>
+        <Button variant="outline" className='rounded-none px-6 py-6 hidden md:flex'>
           Read More
         </Button>
       </div>
@@ -57,11 +57,13 @@ const BlogSection = () => {
               <span className="text-sm text-gray-600">By {post.author}</span>
               <Button variant="outline" size="sm" className='rounded-none'>
                 <ChevronRight className="h-4 w-4" />
-                
               </Button>
             </CardFooter>
           </Card>
         ))}
+           <Button variant="outline" className='rounded-none px-6 py-6 md:hidden'>
+          Read More
+        </Button>
       </div>
     </div>
   );

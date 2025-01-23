@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { WcuCarousel } from './WcuCrs';
 
 const WhyChooseUs = () => {
   const features = [
@@ -54,9 +55,10 @@ const WhyChooseUs = () => {
         <p className="text-gray-300 mb-12">
           Here is why individuals and businesses trust us to lead the way in green innovation
         </p>
+        <WcuCarousel/>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-12 gap-4 mb-16">
+        <div className="lg:grid grid-cols-12 gap-4 mb-16 hidden ">
           {/* Large image */}
           <div className="col-span-12 md:col-span-5 h-[400px]">
             <Image
@@ -134,7 +136,7 @@ const WhyChooseUs = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="space-y-4">
-              <h3 className="text-white text-2xl font-semibold">
+              <h3 className="text-white text-2xl">
                 {feature.title}
               </h3>
               <p className="text-gray-300">

@@ -56,8 +56,8 @@ const TestimonialSlider = () => {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="min-w-full flex gap-6">
               {/* Current Slide */}
-              <div className="w-[70%] bg-white rounded-lg p-8 ">
-                <blockquote className="text-2xl mb-8 max-w-4xl">
+              <div className="md:w-[70%] bg-white rounded-lg">
+                <blockquote className="text-lg md:text-2xl mb-8 md:max-w-4xl">
                   {testimonial.quote}
                 </blockquote>
                 
@@ -69,7 +69,7 @@ const TestimonialSlider = () => {
               </div>
 
               {/* Preview of Next Slide */}
-              <div className="w-[15%] bg-white rounded-lg p-8  text-gray-300">
+              <div className="w-[15%] bg-white rounded-lg p-8 hidden text-gray-300">
                 <blockquote className="text-xl line-clamp-3">
                   {testimonials[getNextIndex(index)].quote}
                 </blockquote>
