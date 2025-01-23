@@ -21,7 +21,7 @@ export default function Home() {
       >
         <div className="flex items-center w-full h-full bg-black bg-opacity-50">
           <article className="flex items-start text-start flex-col gap-4 text-white w-full max-w-[600px] mx-8">
-        <h1 className="text-2xl md:text-5xl font-semibold">
+        <h1 className="text-2xl md:text-5xl ">
           Revolutionizing Mobility, Sustainability, and Energy Access!
         </h1>
         <p className="text-lg md:text-xl">
@@ -137,46 +137,46 @@ export default function Home() {
       >
         <div className="flex flex-col py-8 gap-12">
           <div className="flex flex-col gap-4">
-            <h1 className="text-4xl font-semibold">Our Solutions</h1>
-            <p className="text-lg max-w-lg font-thin">Join the green revolution with our electric mobility solutions, innovative liquid tree technology, and smart energy systems.</p>
+            <h1 className="text-4xl lg:text-5xl">Our Solutions</h1>
+            <p className="text-lg max-w-lg font-thin text-gray-500">Join the green revolution with our electric mobility solutions, innovative liquid tree technology, and smart energy systems.</p>
           </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="flex flex-col gap-3 py-6">
               <CloudLightning height={30} width={30} className="rounded-2xl p-2 bg-[#FF8C00] mb-4" />
-              <h1 className="text-lg font-semibold">Electric Mobility Solutions</h1>
-              <p>Eco-friendly vehicles and buses powered by our partnerships with leading companies. We deliver clean and reliable transportation that reduces emissions and enhances efficiency.</p>
+              <h1 className="text-xl">Electric Mobility Solutions</h1>
+              <p className="text-gray-500">Eco-friendly vehicles and buses powered by our partnerships with leading companies. We deliver clean and reliable transportation that reduces emissions and enhances efficiency.</p>
               <div>
               <Button variant={"outline"} className="px-8 py-6 rounded-none">Explore</Button>
               </div>
             </div>
             <div className="flex flex-col gap-3 py-6">
               <Cloud height={30} width={30} className="rounded-2xl p-2 bg-[#FF8C00] mb-4" />
-              <h1 className="text-lg font-semibold">Liquid Tree Technology</h1>
-              <p>Our proprietary Liquid Tree technology is designed to improve urban air quality by absorbing carbon dioxide and releasing oxygen, creating healthier cities for everyone.</p>
+              <h1 className="text-xl">Liquid Tree Technology</h1>
+              <p className="text-gray-500">Our proprietary Liquid Tree technology is designed to improve urban air quality by absorbing carbon dioxide and releasing oxygen, creating healthier cities for everyone.</p>
               <div>
               <Button variant={"outline"} className="px-8 py-6 rounded-none">Learn About Liquid Trees</Button>
               </div>
             </div>
             <div className="flex flex-col gap-3 py-6">
               <CreditCard height={30} width={30} className="rounded-2xl p-2 bg-[#FF8C00] mb-4" />
-              <h1 className="text-lg font-semibold">Ozone Prepaid Fuel/Gas Card</h1>
-              <p>Simplify your fueling experience with our Ozone Prepaid Card. It’s a convenient, cashless, and cost-saving solution for purchasing fuel and gas anytime, anywhere.</p>
+              <h1 className="text-xl">Ozone Prepaid Fuel/Gas Card</h1>
+              <p className="text-gray-500">Simplify your fueling experience with our Ozone Prepaid Card. It’s a convenient, cashless, and cost-saving solution for purchasing fuel and gas anytime, anywhere.</p>
               <div>
               <Button variant={"outline"} className="px-8 py-6 rounded-none">Get Your Ozone Card</Button>
               </div>
             </div>
             <div className="flex flex-col gap-3 py-6">
               <Wrench height={30} width={30} className="rounded-2xl p-2 bg-[#FF8C00] mb-4" />
-              <h1 className="text-lg font-semibold">Autogas Vehicle Conversion/Installation</h1>
-              <p>Convert your vehicle to run on cleaner and more affordable autogas. Enjoy reduced fuel costs and a greener driving experience with our expert installation services.</p>
+              <h1 className="text-xl">Autogas Vehicle Conversion/Installation</h1>
+              <p className="text-gray-500">Convert your vehicle to run on cleaner and more affordable autogas. Enjoy reduced fuel costs and a greener driving experience with our expert installation services.</p>
               <div>
               <Button variant={"outline"} className="px-8 py-6 rounded-none">Book a Conversion</Button>
               </div>
             </div>
             <div className="flex flex-col gap-3 py-6">
               <Banknote height={30} width={30} className="rounded-2xl p-2 bg-[#FF8C00] mb-4" />
-              <h1 className="text-lg font-semibold">Autogas Vehicle Financing (Powered by Wema Bank)</h1>
-              <p>Own or convert your autogas vehicle with our flexible “Pay Small-Small” financing plans. Affordable, accessible, and hassle-free.</p>
+              <h1 className="text-xl">Autogas Vehicle Financing (Powered by Wema Bank)</h1>
+              <p className="text-gray-500">Own or convert your autogas vehicle with our flexible “Pay Small-Small” financing plans. Affordable, accessible, and hassle-free.</p>
               <div>
               <Button variant={"outline"} className="px-8 py-6 rounded-none">Apply for Financing</Button>
               </div>
@@ -190,7 +190,7 @@ export default function Home() {
       <section>
         {/* Orange background element */}
 
-        <div className="grid lg:grid-cols-2 gap-8 items-center mx-auto px-4 py-12 md:py-24">
+        <div className="grid lg:grid-cols-2 gap-8 items-center mx-auto px-8 py-12 md:py-24">
 
             <div className="relative">
             <div className="absolute top-0 left-0 w-48 h-48 bg-[#FF8C00]"></div>
@@ -214,7 +214,7 @@ export default function Home() {
               delivering great returns.
             </p>
 
-            <Button size="lg" className="bg-black hover:bg-black/90 text-white">
+            <Button size="lg" className="bg-black hover:bg-black/90 text-white rounded-none py-3">
               Investment Opportunities
             </Button>
           </div>

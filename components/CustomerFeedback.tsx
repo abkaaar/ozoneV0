@@ -40,9 +40,9 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="mx-auto px-4 py-16">
+    <div className="mx-auto px-8 py-16">
       <div className="mb-12">
-        <h2 className="text-4xl font-bold mb-4">What Our Customers Say</h2>
+        <h2 className="text-4xl md:text-6xl mb-4">What Our Customers <br /> Say</h2>
         <p className="text-gray-600">
           Real stories from individuals and businesses embracing sustainable mobility and energy solutions.
         </p>
@@ -56,7 +56,7 @@ const TestimonialSlider = () => {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="min-w-full flex gap-6">
               {/* Current Slide */}
-              <div className="w-[85%] bg-white rounded-lg p-8 ">
+              <div className="w-[70%] bg-white rounded-lg p-8 ">
                 <blockquote className="text-2xl mb-8 max-w-4xl">
                   {testimonial.quote}
                 </blockquote>
