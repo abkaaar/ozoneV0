@@ -1,8 +1,12 @@
+import BlogSection from "@/components/Blog";
+import ContactSection from "@/components/Contact";
+import TestimonialSlider from "@/components/CustomerFeedback";
+import  { FAQSection } from "@/components/Faq";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import { Button } from "@/components/ui/button";
 import WhyChooseUs from "@/components/Wcu";
-import { CloudLightning } from "lucide-react";
+import { Banknote, Cloud, CloudLightning, CreditCard, Wrench } from "lucide-react";
 import Image from "next/image";
 
 
@@ -16,33 +20,33 @@ export default function Home() {
         style={{ backgroundImage: "url('/assets/ozone-banner.png')" }}
       >
         <div className="flex items-center w-full h-full bg-black bg-opacity-50">
-          <article className="flex items-start text-start flex-col gap-4 text-white w-[600px] mx-8">
-            <h1 className="text-2xl md:text-5xl font-semibold">
-              Revolutionizing Mobility, Sustainability, and Energy Access!
-            </h1>
-            <p className="text-lg md:text-xl">
-              Join the green revolution with our electric mobility solutions, innovative liquid tree technology, and smart energy systems.
-            </p>
-            <div className="btns flex gap-4 justify-start">
-              <Button className="bg-black py-6 px-6 rounded-none">Get Started Today</Button>
-              <Button variant={"ghost"} className="border py-6 px-6 rounded-none">Learn More About Us</Button>
-            </div>
-            <div className="justify-center flex gap-2">
-
-            </div>
+          <article className="flex items-start text-start flex-col gap-4 text-white w-full max-w-[600px] mx-8">
+        <h1 className="text-2xl md:text-5xl font-semibold">
+          Revolutionizing Mobility, Sustainability, and Energy Access!
+        </h1>
+        <p className="text-lg md:text-xl">
+          Join the green revolution with our electric mobility solutions, innovative liquid tree technology, and smart energy systems.
+        </p>
+        <div className="btns flex flex-col sm:flex-row gap-4 justify-start w-full">
+          <Button className="bg-black py-6 px-6 rounded-none">Get Started Today</Button>
+          <Button variant={"ghost"} className="border py-6 px-6 rounded-none">Learn More About Us</Button>
+        </div>
+        <div className="justify-center flex gap-2">
+        </div>
           </article>
         </div>
       </section>
-      <section
-        className="bg-white py-8 px-8"
-      >
-        <div className="flex items-center justify-between">
-          <Image src="/assets/icons/brands/wema.png" alt="Ozone" width={80} height={80} />
-          <Image src="/assets/icons/brands/bolt.png" alt="Ozone" width={80} height={80} />
-          <Image src="/assets/icons/brands/uber.png" alt="Ozone" width={80} height={80} />
-          <Image src="/assets/icons/brands/indrive.png" alt="Ozone" width={80} height={80} />
-          <Image src="/assets/icons/brands/oryx.png" alt="Ozone" width={80} height={80} />
-          <Image src="/assets/icons/brands/pick-all.png" alt="Ozone" width={80} height={80} />
+      <section className="bg-white py-8 px-8 overflow-hidden">
+        <div className="flex animate-slide">
+          <div className="flex items-center justify-center gap-16 min-w-full">
+            <Image src="/assets/icons/brands/wema.png" alt="Ozone" width={80} height={80} />
+            <Image src="/assets/icons/brands/bolt.png" alt="Ozone" width={80} height={80} />
+            <Image src="/assets/icons/brands/uber.png" alt="Ozone" width={80} height={80} />
+            <Image src="/assets/icons/brands/indrive.png" alt="Ozone" width={80} height={80} />
+            <Image src="/assets/icons/brands/oryx.png" alt="Ozone" width={80} height={80} />
+            <Image src="/assets/icons/brands/pick-all.png" alt="Ozone" width={80} height={80} />
+          </div>
+         
         </div>
       </section>
 
@@ -136,77 +140,69 @@ export default function Home() {
             <h1 className="text-4xl font-semibold">Our Solutions</h1>
             <p className="text-lg max-w-lg font-thin">Join the green revolution with our electric mobility solutions, innovative liquid tree technology, and smart energy systems.</p>
           </div>
-          <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="flex flex-col gap-3 py-6">
               <CloudLightning height={30} width={30} className="rounded-2xl p-2 bg-[#FF8C00] mb-4" />
               <h1 className="text-lg font-semibold">Electric Mobility Solutions</h1>
               <p>Eco-friendly vehicles and buses powered by our partnerships with leading companies. We deliver clean and reliable transportation that reduces emissions and enhances efficiency.</p>
               <div>
-                <Button variant={"outline"} className="px-8 py-6 rounded-none">Explore</Button>
-
+              <Button variant={"outline"} className="px-8 py-6 rounded-none">Explore</Button>
               </div>
             </div>
             <div className="flex flex-col gap-3 py-6">
-              <CloudLightning height={30} width={30} className="rounded-2xl p-2 bg-[#FF8C00] mb-4" />
-              <h1 className="text-lg font-semibold">Electric Mobility Solutions</h1>
-              <p>Eco-friendly vehicles and buses powered by our partnerships with leading companies. We deliver clean and reliable transportation that reduces emissions and enhances efficiency.</p>
+              <Cloud height={30} width={30} className="rounded-2xl p-2 bg-[#FF8C00] mb-4" />
+              <h1 className="text-lg font-semibold">Liquid Tree Technology</h1>
+              <p>Our proprietary Liquid Tree technology is designed to improve urban air quality by absorbing carbon dioxide and releasing oxygen, creating healthier cities for everyone.</p>
               <div>
-                <Button variant={"outline"} className="px-8 py-6 rounded-none">Explore</Button>
-
+              <Button variant={"outline"} className="px-8 py-6 rounded-none">Learn About Liquid Trees</Button>
               </div>
             </div>
             <div className="flex flex-col gap-3 py-6">
-              <CloudLightning height={30} width={30} className="rounded-2xl p-2 bg-[#FF8C00] mb-4" />
-              <h1 className="text-lg font-semibold">Electric Mobility Solutions</h1>
-              <p>Eco-friendly vehicles and buses powered by our partnerships with leading companies. We deliver clean and reliable transportation that reduces emissions and enhances efficiency.</p>
+              <CreditCard height={30} width={30} className="rounded-2xl p-2 bg-[#FF8C00] mb-4" />
+              <h1 className="text-lg font-semibold">Ozone Prepaid Fuel/Gas Card</h1>
+              <p>Simplify your fueling experience with our Ozone Prepaid Card. It’s a convenient, cashless, and cost-saving solution for purchasing fuel and gas anytime, anywhere.</p>
               <div>
-                <Button variant={"outline"} className="px-8 py-6 rounded-none">Explore</Button>
-
+              <Button variant={"outline"} className="px-8 py-6 rounded-none">Get Your Ozone Card</Button>
               </div>
             </div>
             <div className="flex flex-col gap-3 py-6">
-              <CloudLightning height={30} width={30} className="rounded-2xl p-2 bg-[#FF8C00] mb-4" />
-              <h1 className="text-lg font-semibold">Electric Mobility Solutions</h1>
-              <p>Eco-friendly vehicles and buses powered by our partnerships with leading companies. We deliver clean and reliable transportation that reduces emissions and enhances efficiency.</p>
+              <Wrench height={30} width={30} className="rounded-2xl p-2 bg-[#FF8C00] mb-4" />
+              <h1 className="text-lg font-semibold">Autogas Vehicle Conversion/Installation</h1>
+              <p>Convert your vehicle to run on cleaner and more affordable autogas. Enjoy reduced fuel costs and a greener driving experience with our expert installation services.</p>
               <div>
-                <Button variant={"outline"} className="px-8 py-6 rounded-none">Explore</Button>
-
+              <Button variant={"outline"} className="px-8 py-6 rounded-none">Book a Conversion</Button>
               </div>
             </div>
             <div className="flex flex-col gap-3 py-6">
-              <CloudLightning height={30} width={30} className="rounded-2xl p-2 bg-[#FF8C00] mb-4" />
-              <h1 className="text-lg font-semibold">Electric Mobility Solutions</h1>
-              <p>Eco-friendly vehicles and buses powered by our partnerships with leading companies. We deliver clean and reliable transportation that reduces emissions and enhances efficiency.</p>
+              <Banknote height={30} width={30} className="rounded-2xl p-2 bg-[#FF8C00] mb-4" />
+              <h1 className="text-lg font-semibold">Autogas Vehicle Financing (Powered by Wema Bank)</h1>
+              <p>Own or convert your autogas vehicle with our flexible “Pay Small-Small” financing plans. Affordable, accessible, and hassle-free.</p>
               <div>
-                <Button variant={"outline"} className="px-8 py-6 rounded-none">Explore</Button>
-
+              <Button variant={"outline"} className="px-8 py-6 rounded-none">Apply for Financing</Button>
               </div>
             </div>
-          </div>
+            </div>
         </div>
       </section>
       <section>
-        <WhyChooseUs/>
+        <WhyChooseUs />
       </section>
-      <section className="relative overflow-hidden">
-      {/* Orange background element */}
-      <div className="absolute top-4 left-6 w-1/4 h-64 bg-[#FF8A00] transform origin-top" />
+      <section>
+        {/* Orange background element */}
 
-      <div className="container relative mx-auto px-4 py-12 md:py-24">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
-          <div className="">
-            <div className="relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 items-center mx-auto px-4 py-12 md:py-24">
+
+            <div className="relative">
+            <div className="absolute top-0 left-0 w-48 h-48 bg-[#FF8C00]"></div>
             <Image
               src="/assets/investment-hero.png"
               alt="Business professionals shaking hands in an office setting"
-              width={400}
-              height={300}
-              className=""
+              width={350}
+              height={250}
+              className="relative z-10"
               priority
             />
-          </div> 
-          </div>
-         
+            </div>
 
           <div className="space-y-6 lg:pl-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
@@ -223,8 +219,19 @@ export default function Home() {
             </Button>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section className="py-16">
+        <BlogSection/>
+      </section>
+      <section>
+        <TestimonialSlider/>
+      </section>
+      <section>
+        <FAQSection/>
+      </section>
+      <section>
+        <ContactSection/>
+      </section>
       <Footer />
 
     </>

@@ -22,17 +22,33 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <div className="bg-emerald-800 py-16 px-8">
-      {/* Grid background overlay */}
-      <div 
-        className="absolute inset-0 opacity-10"
-        style={{
-          backgroundImage: 'linear-gradient(rgba(0, 100, 0, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 100, 0, 0.1) 1px, transparent 1px)',
-          backgroundSize: '20px 20px'
-        }}
-      />
+    <div className="bg-emerald-800 min-h-screen px-8 py-12 relative">
+      {/* Grid background - made with repeating linear gradients for precise control */}
+      <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `
+            repeating-linear-gradient(
+              0deg,
+              transparent,
+              transparent calc(2rem - 1px),
+              rgba(0, 255, 150, 0.07) calc(2rem - 1px),
+              rgba(0, 255, 150, 0.07) 2rem
+            ),
+            repeating-linear-gradient(
+              90deg,
+              transparent,
+              transparent calc(2rem - 1px),
+              rgba(0, 255, 150, 0.07) calc(2rem - 1px),
+              rgba(0, 255, 150, 0.07) 2rem
+            )
+          `,
+              backgroundSize: '2rem 2rem',
+              backgroundPosition: '0 0'
+            }}
+          />
       
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto relative">
         {/* Header */}
         <h2 className="text-white text-5xl mb-4">Why Choose Us?</h2>
         <p className="text-gray-300 mb-12">
@@ -53,9 +69,9 @@ const WhyChooseUs = () => {
           </div>
           
           {/* Right side grid */}
-          <div className="col-span-12 md:col-span-7 grid grid-cols-3 gap-4">
+          <div className="col-span-12 md:col-span-7 grid grid-cols-4 gap-4">
             {/* Top row images */}
-            <div className="col-span-3 md:col-span-1">
+            <div className="col-span-3 md:col-span-2">
               <Image
                 src="/assets/wcu/2.png"
                 alt="Driver"
@@ -102,7 +118,7 @@ const WhyChooseUs = () => {
                 className="w-full h-48 object-cover rounded-lg"
               />
             </div>
-            <div className="col-span-3 md:col-span-1">
+            <div className="col-span-3 md:col-span-2">
               <Image
                 src="/assets/wcu/7.png"
                 alt="Team member"
