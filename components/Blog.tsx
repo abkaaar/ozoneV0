@@ -46,7 +46,7 @@ const BlogSection = () => {
               </div>
             </CardHeader>
             <CardContent className="pt-6">
-              <h2 className="text-xl font-semibold mb-4 line-clamp-2">
+              <h2 className="text-base mb-4 line-clamp-2">
                 {post.title}
               </h2>
               <p className="text-gray-600 text-sm mb-4 line-clamp-2">

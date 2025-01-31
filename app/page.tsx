@@ -3,6 +3,7 @@ import ContactSection from "@/components/Contact";
 import TestimonialSlider from "@/components/CustomerFeedback";
 import { FAQSection } from "@/components/Faq";
 import Footer from "@/components/Footer";
+import Hero from "@/components/hero";
 import Nav from "@/components/Nav";
 import { Button } from "@/components/ui/button";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
@@ -16,27 +17,13 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <section
-        className="flex h-[100vh] bg-cover bg-center"
-        style={{ backgroundImage: "url('/assets/ozone-banner.png')" }}
-      >
-        <div className="flex items-center w-full h-full bg-black bg-opacity-50">
-          <article className="flex items-start text-start flex-col gap-4 text-white w-full max-w-[600px] mx-8">
-            <h1 className="text-2xl md:text-5xl ">
-              Revolutionizing Mobility, Sustainability, and Energy Access!
-            </h1>
-            <p className="text-lg md:text-xl">
-              Join the green revolution with our electric mobility solutions, innovative liquid tree technology, and smart energy systems.
-            </p>
-            <div className="btns flex flex-col sm:flex-row gap-4 justify-start w-full">
-              <Button className="bg-black py-6 px-6 rounded-none">Get Started Today</Button>
-              <Button variant={"ghost"} className="border py-6 px-6 rounded-none">Learn More About Us</Button>
-            </div>
-            <div className="justify-center flex gap-2">
-            </div>
-          </article>
-        </div>
-      </section>
+   <Hero 
+      title="Revolutionizing Mobility, Sustainability, and Energy Access!"
+      description="Join the green revolution with our electric mobility solutions, innovative liquid tree technology, and smart energy systems."
+      primaryButtonText="Get Started today"
+      secondaryButtonText="Learn More About Us"
+
+   />
       <section className="bg-white py-8 px-8 overflow-hidden">
       <ScrollArea className="">
         <div className="flex items-center justify-center gap-16 min-w-full">

@@ -91,7 +91,7 @@ const Nav: React.FC = () => {
 
                         </NavigationMenuList>
                     </NavigationMenu>
-                    <Link href={"/about"} className='text-white hover:text-gray-300'>
+                    <Link href={"/investments"} className='text-white hover:text-gray-300'>
                         Investments
                     </Link>
                 </div>
