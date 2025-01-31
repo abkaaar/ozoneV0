@@ -117,18 +117,12 @@ const Nav: React.FC = () => {
             {/* Mobile Menu */}
             {isOpen && (
                 <div className="md:hidden mt-4 space-y-4">
-                    <a
-                        href="#about"
+                    <Link href={"/about"}
                         className="block text-white hover:text-gray-300 py-2 px-4"
                     >
                         About Us
-                    </a>
-                    {/* <a
-                        href="#solutions"
-                        className="block text-white hover:text-gray-300 py-2 px-4"
-                    >
-                        Solutions
-                    </a> */}
+                    </Link>
+                  
                      <NavigationMenu>
                         <NavigationMenuList>
                             <NavigationMenuItem>
@@ -184,12 +178,12 @@ const Nav: React.FC = () => {
 
                         </NavigationMenuList>
                     </NavigationMenu>
-                    <a
-                        href="#investments"
+                    <Link 
+                        href={"/investments"}
                         className="block text-white hover:text-gray-300 py-2 px-4"
                     >
                         Investments
-                    </a>
+                    </Link>
                     <div className="px-4 py-2">
                         <button className="w-full bg-white text-black px-6 py-2  hover:bg-gray-100">
                             Contact Us
