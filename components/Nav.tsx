@@ -98,9 +98,11 @@ const Nav: React.FC = () => {
 
                 {/* Contact Button */}
                 <div className="hidden md:flex">
+                    <Link href={"/contact"}>
+                    
                     <button className="bg-white text-black px-8 py-3 rounded-none hover:bg-gray-100">
                         Contact Us
-                    </button>
+                    </button></Link>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -185,9 +187,11 @@ const Nav: React.FC = () => {
                         Investments
                     </Link>
                     <div className="px-4 py-2">
+                        <Link href={"/contact"}>
                         <button className="w-full bg-white text-black px-6 py-2  hover:bg-gray-100">
                             Contact Us
                         </button>
+                        </Link>
                     </div>
                 </div>
             )}

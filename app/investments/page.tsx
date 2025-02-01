@@ -1,5 +1,6 @@
 import ContactSection from '@/components/Contact'
 import { FAQSection } from '@/components/Faq'
+import Footer from '@/components/Footer'
 import Hero from '@/components/hero'
 import Nav from '@/components/Nav'
 import { Button } from '@/components/ui/button'
@@ -179,6 +180,7 @@ export default function Investments() {
            <section>
             <ContactSection/>
            </section>
+           <Footer/>
     </>
   )
 }
