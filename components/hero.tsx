@@ -9,6 +9,8 @@ interface HeroProps {
     secondaryButtonText?: string;
     onPrimaryClick?: () => void;
     onSecondaryClick?: () => void;
+    showPrimaryButton?: boolean;
+    showSecondaryButton?: boolean;
 }
 
 // Revolutionizing Mobility, Sustainability, and Energy Access!
@@ -24,6 +26,8 @@ function Hero({
     secondaryButtonText,
     onPrimaryClick,
     onSecondaryClick,
+    showPrimaryButton = true,
+    showSecondaryButton = true,
 }: HeroProps) {
     return (
         <section
@@ -35,19 +39,16 @@ function Hero({
                     <h1 className="text-2xl md:text-5xl">{title}</h1>
                     <p className="text-sm md:text-base font-thin">{description}</p>
                     <div className="btns flex flex-col sm:flex-row gap-4 justify-start w-full">
-                        <Button 
-                            className="bg-black py-6 px-6 rounded-none"
-                            onClick={onPrimaryClick}
-                        >
-                            {primaryButtonText}
-                        </Button>
-                        <Button 
-                            variant="ghost" 
-                            className="border py-6 px-6 rounded-none"
-                            onClick={onSecondaryClick}
-                        >
-                            {secondaryButtonText}
-                        </Button>
+                        {showPrimaryButton && (
+                            <Button onClick={onPrimaryClick} className="bg-black py-6 px-6 rounded-none">
+                                {primaryButtonText}
+                            </Button>
+                        )}
+                        {showSecondaryButton && (
+                            <Button variant="ghost" onClick={onSecondaryClick} className="border py-6 px-6 rounded-none">
+                                {secondaryButtonText}
+                            </Button>
+                        )}
                     </div>
                     <div className="justify-center flex gap-2" />
                 </article>
