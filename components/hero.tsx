@@ -21,7 +21,7 @@ function Hero({
     title,
     description,
     primaryButtonText = 'Get Started Today',
-    secondaryButtonText = 'Learn More About Us',
+    secondaryButtonText,
     onPrimaryClick,
     onSecondaryClick,
 }: HeroProps) {

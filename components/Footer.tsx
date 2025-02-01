@@ -70,7 +70,7 @@ const Footer = () => {
           {/* Social links and copyright */}
           <div className="w-full flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-gray-600">
-              © 2024 YourCompany. All Rights Reserved.
+              © 2025 Ozone. All Rights Reserved.
             </div>
             <div className="flex space-x-6">
               {socialIcons.map(({ icon: Icon, label, href }) => (

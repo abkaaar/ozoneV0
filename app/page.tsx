@@ -17,16 +17,16 @@ export default function Home() {
   return (
     <>
       <Nav />
-   <Hero 
-      title="Revolutionizing Mobility, Sustainability, and Energy Access!"
-      description="Join the green revolution with our electric mobility solutions, innovative liquid tree technology, and smart energy systems."
-      primaryButtonText="Get Started today"
-      secondaryButtonText="Learn More About Us"
+      <Hero
+        title="Revolutionizing Mobility, Sustainability, and Energy Access!"
+        description="Join the green revolution with our electric mobility solutions, innovative liquid tree technology, and smart energy systems."
+        primaryButtonText="Get Started today"
+        secondaryButtonText="Learn More About Us"
 
-   />
+      />
       <section className="bg-white py-8 px-8 overflow-hidden">
-      <ScrollArea className="">
-        <div className="flex items-center justify-center gap-16 min-w-full">
+        <ScrollArea className="">
+          <div className="flex items-center justify-center gap-16 min-w-full">
             <Image src="/assets/icons/brands/wema.png" alt="Ozone" width={80} height={80} />
             <Image src="/assets/icons/brands/bolt.png" alt="Ozone" width={80} height={80} />
             <Image src="/assets/icons/brands/uber.png" alt="Ozone" width={80} height={80} />
@@ -36,9 +36,9 @@ export default function Home() {
           </div>
           <ScrollBar orientation="horizontal" />
         </ScrollArea>
-          
 
-       
+
+
       </section>
 
       <section>
@@ -181,7 +181,7 @@ export default function Home() {
       <section>
         {/* Orange background element */}
 
-        <div className="grid lg:grid-cols-2 gap-8 items-center mx-auto px-8 py-12 md:py-24">  
+        <div className="grid lg:grid-cols-2 gap-8 items-center mx-auto px-8 py-12 md:py-24">
           <div className="relative">
             <svg width="599" height="480" style={{ width: "100%", height: "auto", maxWidth: "600px", margin: "0 auto" }} viewBox="0 0 599 480" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
               <rect width="519" height="400" fill="#FF8C00" />
