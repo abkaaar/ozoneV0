@@ -1,3 +1,4 @@
+import ContactSection from '@/components/Contact'
 import TestimonialSlider from '@/components/CustomerFeedback'
 import Footer from '@/components/Footer'
 import Hero from '@/components/hero'
@@ -145,16 +146,16 @@ export default function ElectricMobility() {
 
            <div className='py-28 relative'>
                      <div>
-                       <h1 className='text-white text-2xl md:text-4xl max-w-xl'>
-                       Diversify your portfolio with our innovative and sustainable investment plans.
+                       <h1 className='text-white text-2xl md:text-4xl md:ml-24 max-w-xl'>
+                       Key Benefits of <br /> Electric Mobility
                      </h1>
-                     <div className='md:hidden mt-6'>
-                         <Image src="/assets/investment-2.png" alt='ozone-engineer' width={500} height={1000} className="object-cover h-full flex justify-center" />
+                     <div className='md:hidden mt-6 flex justify-center'>
+                         <Image src="/assets/electric-3.png" alt='ozone-engineer' width={500} height={1000} className="object-cover h-full flex justify-center" />
                        </div>
                      </div>
                      <div className='grid grid-cols-1 md:grid-cols-2 py-8'>
-                       <div className='hidden md:flex'>
-                         <Image src="/assets/investment-2.png" alt='ozone-engineer' width={500} height={1000} className="object-cover h-full flex justify-center" />
+                       <div className='hidden md:flex justify-center'>
+                         <Image src="/assets/electric-3.png" alt='ozone-engineer' width={500} height={1000} className="object-cover h-full flex justify-center" />
                        </div>
                        <div>
                          <article className='flex flex-col gap-12'>
@@ -200,6 +201,7 @@ export default function ElectricMobility() {
         </div>
       </section>
       <TestimonialSlider/>
+      <ContactSection />
       <Footer />
     </>
   )

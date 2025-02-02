@@ -40,7 +40,7 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="mx-auto px-8 py-16">
+    <div className="mx-auto px-8 md:px-16 py-16 md:py-28">
       <div className="mb-12">
         <h2 className="text-4xl md:text-6xl mb-4">What Our Customers <br /> Say</h2>
         <p className="text-gray-600">
