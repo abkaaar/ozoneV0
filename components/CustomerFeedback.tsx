@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "Switching to electric buses for our fleet has been a game-changer! With reduced operating costs and zero emissions, we're not just saving money—we're saving the planet. Our customers love the eco-friendly approach too!",
+    quote: "Switching to electric buses for our fleet has been a game-changer! With reduced operating costs and zero emissions, we’re not just saving money—we’re saving the planet. Our customers love the eco-friendly approach too!",
     author: "Adebola A.",
     title: "Logistics Manager",
     company: "GreenHaul Nigeria"
@@ -13,8 +13,20 @@ const testimonials = [
   {
     quote: "Investing in this green venture has been both rewarding and impactful. The returns are solid, and knowing this investment contributes to a cleaner future gives me immense satisfaction.",
     author: "Ngozi E.",
-    title: "CEO",
-    company: "Globacom"
+    title: "Urban Developer",
+    company: ""
+  },
+  {
+    quote: "The Ozone Prepaid Card makes fueling so easy! No more cash hassles or inflated prices. I get discounts and manage my expenses efficiently—it's a win-win!",
+    author: "James T.",
+    title: "Ride Hailing Driver",
+    company: ""
+  },
+  {
+    quote: "Converting my vehicle to autogas was the best decision I made. It's cheaper, cleaner, and better for the environment. Plus, the installation process was smooth and professional.",
+    author: "Chinedu I.",
+    title: "Small Business Owner",
+    company: ""
   }
 ];
 

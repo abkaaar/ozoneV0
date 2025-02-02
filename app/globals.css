@@ -41,10 +41,11 @@
     url("fonts/Nohemi-Thin-BF6438cc577ef3b.otf") format("opentype"),
     url("fonts/Nohemi-Thin-BF6438cc5896c67.ttf") format("truetype"),
     url("fonts/Nohemi-VF-BF6438cc58ad63d.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
+
 
 body {
   font-family: "Nohemi", sans-serif;
