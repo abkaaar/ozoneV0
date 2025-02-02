@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Card, CardContent, CardFooter, CardHeader } from './ui/card';
 import Link from 'next/link';
 
-const BlogSection = () => {
+const RelatedBlog = () => {
   const blogPosts = [
     {
       title: "The Future of Electric Mobility: What You Need to Know",
@@ -27,20 +27,11 @@ const BlogSection = () => {
   ];
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4">
+    <div className="w-full max-w-7xl mx-auto px-8 py-16 md:py-28">
       <div className="flex justify-between items-center mb-8">
-        <h1 className="text-3xl font-bold">Blog</h1>
-        <Link href="/blog">
-          <Button variant="outline" className='rounded-none px-6 py-6 hidden md:flex'>
-            Read More
-          </Button>
-        </Link>
+        <h1 className="text-3xl font-bold">Related Blog</h1>
       </div>
-      
-      <p className="text-gray-600 mb-8">
-        Explore our range of eco-conscious services aimed at creating a sustainable and profitable future.
-      </p>
-
+    
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {blogPosts.map((post, index) => (
           <Link href={post.link} key={index}>
@@ -69,14 +60,10 @@ const BlogSection = () => {
             </Card>
           </Link>
         ))}
-        <Link href="/blog">
-          <Button variant="outline" className='rounded-none px-6 py-6 md:hidden'>
-            Read More
-          </Button>
-        </Link>
+      
       </div>
     </div>
   );
 };
 
-export default BlogSection;
+export default RelatedBlog;
