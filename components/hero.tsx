@@ -23,7 +23,7 @@ function Hero({
     title,
     description,
     primaryButtonText = 'Get Started Today',
-    secondaryButtonText,
+    secondaryButtonText = 'Learn More',
     onPrimaryClick,
     onSecondaryClick,
     showPrimaryButton = true,
