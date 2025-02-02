@@ -40,7 +40,7 @@ const Footer = () => {
           <ul className="space-y-2">
             <li>+234 (123) 456-7890</li>
             <li>Info@YourCompany.Com</li>
-            <li>123 Greenway Drive, Lagos, Nigeria.</li>
+            <li>123 Greenway Drive, Abuja, Nigeria.</li>
           </ul>
         </div>
 
