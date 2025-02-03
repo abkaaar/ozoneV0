@@ -11,6 +11,7 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import WhyChooseUs from "@/components/Wcu";
 import { Banknote, Cloud, CloudLightning, CreditCard, Wrench } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -22,13 +23,15 @@ export default function Home() {
         title="Revolutionizing Mobility, Sustainability, and Energy Access!"
         description="Join the green revolution with our electric mobility solutions, innovative liquid tree technology, and smart energy systems."
         primaryButtonText="Get Started today"
+        primaryButtonLink="/contact"
         secondaryButtonText="Learn More About Us"
+        secondaryButtonLink="/about"
 
       />
       {/* scrolla auto */}
       <section className="bg-white py-8 px-8">
         <ScrollArea className="">
-          <div className="flex items-center justify-center gap-16 min-w-full">
+          <div className="flex items-center justify-evenly space-x-12 w-full">
             <Image src="/assets/icons/brands/wema.png" alt="Ozone" width={80} height={80} />
             <Image src="/assets/icons/brands/bolt.png" alt="Ozone" width={80} height={80} />
             <Image src="/assets/icons/brands/uber.png" alt="Ozone" width={80} height={80} />
@@ -136,7 +139,10 @@ export default function Home() {
               <h1 className="text-xl">Electric Mobility Solutions</h1>
               <p className="text-gray-500">Eco-friendly vehicles and buses powered by our partnerships with leading companies. We deliver clean and reliable transportation that reduces emissions and enhances efficiency.</p>
               <div>
+                <Link href={'/electric'}>
                 <Button variant={"outline"} className="px-8 py-6 rounded-none">Explore</Button>
+                </Link>
+                
               </div>
             </div>
             <div className="flex flex-col gap-3 py-6">
@@ -144,7 +150,10 @@ export default function Home() {
               <h1 className="text-xl">Liquid Tree Technology</h1>
               <p className="text-gray-500">Our proprietary Liquid Tree technology is designed to improve urban air quality by absorbing carbon dioxide and releasing oxygen, creating healthier cities for everyone.</p>
               <div>
+                <Link href={'/liquid'}>
                 <Button variant={"outline"} className="px-8 py-6 rounded-none">Learn About Liquid Trees</Button>
+                </Link>
+                
               </div>
             </div>
             <div className="flex flex-col gap-3 py-6">
@@ -152,7 +161,10 @@ export default function Home() {
               <h1 className="text-xl">Ozone Prepaid Fuel/Gas Card</h1>
               <p className="text-gray-500">Simplify your fueling experience with our Ozone Prepaid Card. It’s a convenient, cashless, and cost-saving solution for purchasing fuel and gas anytime, anywhere.</p>
               <div>
-                <Button variant={"outline"} className="px-8 py-6 rounded-none">Get Your Ozone Card</Button>
+                <Link href={'/prepaid'}>
+                 <Button variant={"outline"} className="px-8 py-6 rounded-none">Get Your Ozone Card</Button>
+                </Link>
+               
               </div>
             </div>
             <div className="flex flex-col gap-3 py-6">
@@ -160,7 +172,10 @@ export default function Home() {
               <h1 className="text-xl">Autogas Vehicle Conversion/Installation</h1>
               <p className="text-gray-500">Convert your vehicle to run on cleaner and more affordable autogas. Enjoy reduced fuel costs and a greener driving experience with our expert installation services.</p>
               <div>
-                <Button variant={"outline"} className="px-8 py-6 rounded-none">Book a Conversion</Button>
+                <Link href={'/conversion'}> 
+                 <Button variant={"outline"} className="px-8 py-6 rounded-none">Book a Conversion</Button>
+                </Link>
+               
               </div>
             </div>
             <div className="flex flex-col gap-3 py-6">
@@ -168,7 +183,10 @@ export default function Home() {
               <h1 className="text-xl">Autogas Vehicle Financing (Powered by Wema Bank)</h1>
               <p className="text-gray-500">Own or convert your autogas vehicle with our flexible “Pay Small-Small” financing plans. Affordable, accessible, and hassle-free.</p>
               <div>
+                <Link href={'/financing'}>
                 <Button variant={"outline"} className="px-8 py-6 rounded-none">Apply for Financing</Button>
+                </Link>
+                
               </div>
             </div>
           </div>

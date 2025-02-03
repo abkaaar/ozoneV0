@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from './ui/button'
+import Link from 'next/link'
 
 interface HeroProps {
     backgroundImage?: string;
@@ -11,6 +12,8 @@ interface HeroProps {
     onSecondaryClick?: () => void;
     showPrimaryButton?: boolean;
     showSecondaryButton?: boolean;
+    primaryButtonLink?: string;
+    secondaryButtonLink?: string;
 }
 
 
@@ -24,6 +27,8 @@ function Hero({
     onSecondaryClick,
     showPrimaryButton = true,
     showSecondaryButton = true,
+    primaryButtonLink = '#',
+    secondaryButtonLink = '#',
 }: HeroProps) {
     return (
         <section
@@ -36,14 +41,18 @@ function Hero({
                     <p className="text-sm md:text-base font-thin">{description}</p>
                     <div className="btns flex flex-col sm:flex-row gap-4 justify-start w-full">
                         {showPrimaryButton && (
-                            <Button onClick={onPrimaryClick} className="bg-black py-6 px-6 rounded-none">
-                                {primaryButtonText}
-                            </Button>
+                            <Link href={primaryButtonLink}>
+                                <Button onClick={onPrimaryClick} className="bg-black py-6 px-6 rounded-none w-full">
+                                    {primaryButtonText}
+                                </Button>
+                            </Link>
                         )}
                         {showSecondaryButton && (
-                            <Button variant="ghost" onClick={onSecondaryClick} className="border py-6 px-6 rounded-none">
-                                {secondaryButtonText}
-                            </Button>
+                            <Link href={secondaryButtonLink}>
+                                <Button variant="ghost" onClick={onSecondaryClick} className="border py-6 px-6 rounded-none w-full">
+                                    {secondaryButtonText}
+                                </Button>
+                            </Link>
                         )}
                     </div>
                     <div className="justify-center flex gap-2" />

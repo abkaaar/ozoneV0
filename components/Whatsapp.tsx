@@ -11,7 +11,7 @@ const WhatsappLink = () => {
     <Link href="https://wa.me/+2349084000008" >
     
      <Image alt="whatsapp number" src={'/assets/icons/whatsapp.png'} width={50} height={50}
-      className={`fixed bottom-20 right-5 shadow-lg rounded-full ${
+      className={`fixed bottom-20 right-5  ${
         visible ? "opacity-100" : "opacity-0"
       }`}
     >

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from './ui/button'
+import Link from 'next/link'
 
 
 export function InvestCta(){
@@ -31,10 +32,11 @@ export function InvestCta(){
               Invest in the green revolution. Whether by shares or ROI, your investment drives sustainability while
               delivering great returns.
             </p>
-
-            <Button size="lg" className="bg-black hover:bg-black/90 text-white rounded-none py-3">
+          <Link href={'/investments'}>
+          <Button size="lg" className="bg-black hover:bg-black/90 text-white rounded-none py-3">
               Investment Opportunities
             </Button>
+          </Link>
           </div>
         </div>
       </section>
