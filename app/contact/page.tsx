@@ -44,9 +44,8 @@ export default function ContactPage() {
                                 <h2>Office Address</h2>
                                 <p>
                                 Coastal Highway Lewes, Delaware, County of Sussex. USA <br />
-              <br />
-
-              Jinifa Plaza, Samuel Ademulegun Street, Central Business District Abuja, Nigeria.</p>
+                                   <br />
+                                    Jinifa Plaza, Samuel Ademulegun Street, Central Business District Abuja, Nigeria.</p>
                             </div>
                         </div>
                     </article>

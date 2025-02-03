@@ -13,10 +13,6 @@ interface HeroProps {
     showSecondaryButton?: boolean;
 }
 
-// Revolutionizing Mobility, Sustainability, and Energy Access!
-// 
-// Get started today
-// learn more about us
 
 function Hero({
     backgroundImage = '/assets/ozone-banner.png',

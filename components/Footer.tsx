@@ -5,10 +5,10 @@ import Image from 'next/image';
 
 const Footer = () => {
   const socialIcons = [
-    { icon: Facebook, label: 'Facebook', href: 'www.facebook.com/ozonehq' },
-    { icon: Twitter, label: 'Twitter', href: 'www.twitter.com/ozone_hq' },
+    { icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/ozonehq' },
+    { icon: Twitter, label: 'Twitter', href: 'https://www.twitter.com/ozone_hq' },
     { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/company/ozonehq' },
-    { icon: Instagram, label: 'Instagram', href: 'www.instagram.com/ozone_hq' }
+    { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/ozone_hq' }
   ];
 
 
@@ -42,13 +42,11 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-4">Contact Information</h3>
           <ul className="space-y-2">
-            <li>+234 9084000008 </li>
+            <li>+234 9084000008</li>
             <li>hello@myozone.co</li>
             <li>
-
               Coastal Highway Lewes, Delaware, County of Sussex. <br />
               <br />
-
               Jinifa Plaza, Samuel Ademulegun Street, Central Business District, Abuja.
             </li>
           </ul>
