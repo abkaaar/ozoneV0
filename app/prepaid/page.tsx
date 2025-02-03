@@ -58,8 +58,8 @@ export default function Prepaid() {
                 </div>
             </section>
             <section>
-                <div className='bg-white grid grid-cols-1 md:grid-cols-2 mx-8 py-16 md:py-28'>
-                    <div>
+                <div className='bg-white mx-8 py-20 md:py-28'>
+                    <div className=' grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto'>
                         <article>
                             <h1 className='text-3xl md:text-5xl mb-8'>Features of Ozone Prepaid Fuel/Gas Card</h1>
                             <div className='mb-8 md:hidden'>
@@ -105,10 +105,11 @@ export default function Prepaid() {
                             </div>
 
                         </article>
-                    </div>
                     <div className='p-4 hidden md:flex'>
                         <Image src="/assets/electric-1.png" alt='ozone-engineer' width={600} height={500} className='object-cover' />
                     </div>
+                    </div>
+                    
                 </div>
             </section>
             <section>
@@ -170,10 +171,10 @@ export default function Prepaid() {
                 </div>
             </section>
             <section>
-                <div className=" mx-auto px-8 py-16 md:py-28">
+                <div className=" mx-auto px-8 py-20 md:py-28">
 
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 mb-16">
+                    <div className="grid grid-cols-1 md:grid-cols-2 mb-16 max-w-7xl mx-auto">
                         <div className="">
                             <h1 className="text-3xl md:text-5xl mb-12">
                                 Benefits of Using<br />
@@ -196,15 +197,15 @@ export default function Prepaid() {
                                 <h2 className="text-2xl mb-6 ">For Individuals:</h2>
                                 <ul className="space-y-4">
                                     <li className="flex gap-3">
-                                        <span className="font-bold">Convenience:</span>
+                                        <span className="">Convenience :</span>
                                         No need to carry cash or worry about using physical bank cards.
                                     </li>
                                     <li className="flex gap-3">
-                                        <span className="font-bold">Cost Control:</span>
+                                        <span className="">Cost Control :</span>
                                         Stick to your fueling budget by preloading your card with a set amount.
                                     </li>
                                     <li className="flex gap-3">
-                                        <span className="font-bold">Safety:</span>
+                                        <span className="">Safety :</span>
                                         Keep your fuel purchases secure with a PIN-protected card.
                                     </li>
                                 </ul>
@@ -214,11 +215,11 @@ export default function Prepaid() {
                                 <h2 className="text-2xl mb-6">For Businesses</h2>
                                 <ul className="space-y-4">
                                     <li className="flex gap-3">
-                                        <span className="font-bold">Fleet Management:</span>
+                                        <span className="">Fleet Management :</span>
                                         Easily manage fuel expenses for your company vehicles with prepaid cards for each vehicle.
                                     </li>
                                     <li className="flex gap-3">
-                                        <span className="font-bold">Expense Tracking:</span>
+                                        <span className="">Expense Tracking :</span>
                                         Use our platform to track fuel expenditures, monitor usage, and generate reports for your business.
                                     </li>
                                 </ul>
@@ -228,7 +229,7 @@ export default function Prepaid() {
                                 <h2 className="text-2xl mb-6">For Travelers</h2>
                                 <ul className="space-y-4">
                                     <li className="flex gap-3">
-                                        <span className="font-bold">Global Acceptance:</span>
+                                        <span className="">Global Acceptance :</span>
                                         Whether you are on a road trip or commuting around the city, the Ozone Prepaid Card is accepted nationwide and offers convenience on the go.
                                     </li>
                                 </ul>

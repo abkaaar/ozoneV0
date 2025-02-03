@@ -91,7 +91,7 @@ export default function Investments() {
         </div>
       </section>
       <section>
-        <div className='bg-white mx-8 py-28'>
+        <div className='bg-white mx-8 py-20 md:py-28 max-w-7xl mx-auto'>
           <div>
             <h1 className='text-2xl md:text-4xl max-w-xl'>
             Diversify your portfolio with our innovative and sustainable investment plans.
@@ -139,7 +139,7 @@ export default function Investments() {
         <section>
              {/* Orange background element */}
      
-             <div className="grid lg:grid-cols-2 gap-8 items-center mx-auto px-8 py-12 md:py-24">
+             <div className="grid lg:grid-cols-2 gap-8 items-center max-w-7xl  mx-auto px-8 md:px-0  py-20 md:py-28">
                <div className="relative">
                  <svg width="599" height="480" style={{ width: "100%", height: "auto", maxWidth: "600px", margin: "0 auto" }} viewBox="0 0 599 480" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                    <rect width="519" height="400" fill="#054630" />

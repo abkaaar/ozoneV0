@@ -27,7 +27,7 @@ const BlogSection = () => {
   ];
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4">
+    <div className="w-full max-w-7xl mx-auto px-8 py-20 md:py-28 ">
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-3xl font-bold">Blog</h1>
         <Link href="/blog">

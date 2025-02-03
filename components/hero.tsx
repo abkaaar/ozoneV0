@@ -31,10 +31,10 @@ function Hero({
 }: HeroProps) {
     return (
         <section
-            className="flex h-[100vh] bg-cover bg-center"
+            className="flex h-[100vh] bg-cover "
             style={{ backgroundImage: `url('${backgroundImage}')` }}
         >
-            <div className="flex items-center w-full h-full bg-black bg-opacity-50">
+            <div className="flex items-center w-full h-full bg-black bg-opacity-50 md:px-24">
                 <article className="flex items-start text-start flex-col gap-4 text-white w-full max-w-[600px] mx-8">
                     <h1 className="text-2xl md:text-5xl">{title}</h1>
                     <p className="text-sm md:text-base font-thin">{description}</p>

@@ -113,7 +113,7 @@ export default function LiquidTree() {
                     </div>
                   </section>
             <section>
-                <div className='bg-emerald-800 px-8 relative grid grid-cols-1 md:grid-cols-2 py-16 md:py-28'>
+                <div className='bg-emerald-800 px-8  relative  py-20 md:py-28'>
                      {/* Grid background - made with repeating linear gradients for precise control */}
                      <div
                         className="absolute inset-0"
@@ -138,7 +138,8 @@ export default function LiquidTree() {
                             backgroundPosition: '0 0'
                         }}
                     />
-                    <div className='relative'>
+              
+                   <div className='relative grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto'>
                         <article>
                             <h1 className='text-3xl md:text-5xl mb-4 text-white'>Key Benefits  <br /> of Liquid <br /> Tree Technology</h1>
                             <div className='mb-8 md:hidden'>
@@ -172,11 +173,13 @@ export default function LiquidTree() {
                            </div>
 
                         </article>
-                    </div>
-                    <div className='p-4 hidden md:flex'>
+                        <div className='p-4 hidden md:flex'>
                         <Image src="/assets/electric-1.png" alt='ozone-engineer' width={600} height={500} className='object-cover' />
                     </div>
-                </div>
+                    </div>
+                
+                   </div>
+         
             </section>
             <section>
     <div className="bg-white min-h-screen px-8 py-28 relative">

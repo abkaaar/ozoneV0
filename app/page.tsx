@@ -25,7 +25,8 @@ export default function Home() {
         secondaryButtonText="Learn More About Us"
 
       />
-      <section className="bg-white py-8 px-8 overflow-hidden">
+      {/* scrolla auto */}
+      <section className="bg-white py-8 px-8">
         <ScrollArea className="">
           <div className="flex items-center justify-center gap-16 min-w-full">
             <Image src="/assets/icons/brands/wema.png" alt="Ozone" width={80} height={80} />
@@ -37,9 +38,6 @@ export default function Home() {
           </div>
           <ScrollBar orientation="horizontal" />
         </ScrollArea>
-
-
-
       </section>
 
       <section>
@@ -125,9 +123,9 @@ export default function Home() {
         </div>
       </section>
       <section
-        className="bg-white p-8"
+        className="bg-white"
       >
-        <div className="flex flex-col py-8 gap-12">
+        <div className="flex flex-col px-8 md:px-0 py-16 gap-12 max-w-7xl mx-auto md:py-28">
           <div className="flex flex-col gap-4">
             <h1 className="text-4xl lg:text-5xl">Our Solutions</h1>
             <p className="text-lg max-w-lg font-thin text-gray-500">Join the green revolution with our electric mobility solutions, innovative liquid tree technology, and smart energy systems.</p>
@@ -182,7 +180,7 @@ export default function Home() {
       <section>
             <InvestCta/>
       </section>
-      <section className="py-16">
+      <section className="">
         <BlogSection />
       </section>
       <section>

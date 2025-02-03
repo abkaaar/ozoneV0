@@ -4,7 +4,7 @@ import { ContactForm } from './ContactForm';
 const ContactSection = () => {
 
   return (
-    <div className="bg-emerald-800 min-h-screen px-8 py-12 relative">
+    <div className="bg-emerald-800 min-h-screen px-8 py-20 md:py-28  relative">
 
               {/* Grid background - made with repeating linear gradients for precise control */}
       <div

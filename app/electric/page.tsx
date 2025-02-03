@@ -63,9 +63,9 @@ export default function ElectricMobility() {
         </div>
       </section>
       <section>
-        <div className='bg-white grid grid-cols-1 md:grid-cols-2 mx-8 py-16 md:py-28'>
-          <div>
-            <article>
+        <div className='max-w-7xl mx-auto bg-white grid grid-cols-1 md:grid-cols-2 p-8 py-20 md:py-28  '>
+          <div className=''>
+            <article className=''>
               <h1 className='text-3xl md:text-5xl mb-4'>What We Offer</h1>
               <p className='mb-8'>Join the green revolution with our electric mobility solutions, innovative liquid tree technology, and smart energy systems.</p>
               <div className='mb-8 md:hidden'>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import Link from 'next/link';
 
 const Footer = () => {
   const socialIcons = [
@@ -17,8 +18,8 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-4">Company</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:text-gray-600">Blog</a></li>
-            <li><a href="#" className="hover:text-gray-600">About Us</a></li>
+            <li><Link href={'/blog'} className="hover:text-gray-600">Blog</Link></li>
+            <li><Link href={'/about'} className="hover:text-gray-600">About Us</Link></li>
           </ul>
         </div>
 
@@ -26,11 +27,11 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-4">Solutions</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:text-gray-600">Electric Mobility</a></li>
-            <li><a href="#" className="hover:text-gray-600">Liquid Tree Technology</a></li>
-            <li><a href="#" className="hover:text-gray-600">Ozone Prepaid Card</a></li>
-            <li><a href="#" className="hover:text-gray-600">Autogas Conversion</a></li>
-            <li><a href="#" className="hover:text-gray-600">Financing</a></li>
+            <li><Link href={'/eletric'} className="hover:text-gray-600">Electric Mobility</Link></li>
+            <li><Link href={'/liquid'} className="hover:text-gray-600">Liquid Tree Technology</Link></li>
+            <li><Link href={'/prepaid'} className="hover:text-gray-600">Ozone Prepaid Card</Link></li>
+            <li><Link href={'/conversion'} className="hover:text-gray-600">Autogas Conversion</Link></li>
+            <li><Link href={'/financing'} className="hover:text-gray-600">Financing</Link></li>
           </ul>
         </div>
 
@@ -38,7 +39,7 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-4">Contact Information</h3>
           <ul className="space-y-2">
-            <li>+234 (123) 456-7890</li>
+            <li>+234 9084000008 </li>
             <li>Info@YourCompany.Com</li>
             <li>123 Greenway Drive, Abuja, Nigeria.</li>
           </ul>
