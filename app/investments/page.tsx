@@ -91,8 +91,9 @@ export default function Investments() {
         </div>
       </section>
       <section>
-        <div className='bg-white mx-8 py-20 md:py-28 max-w-7xl mx-auto'>
-          <div>
+        <div className='bg-white py-20 md:py-28 max-w-7xl mx-auto'>
+        <div className='px-8 md:px-0'>
+        <div>
             <h1 className='text-2xl md:text-4xl max-w-xl'>
             Diversify your portfolio with our innovative and sustainable investment plans.
           </h1>
@@ -134,6 +135,7 @@ export default function Investments() {
             </div>
 
           </div>
+        </div>
         </div>
       </section>
         <section>

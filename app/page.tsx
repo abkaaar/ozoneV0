@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/hero";
 import { InvestCta } from "@/components/InvestCta";
 import Nav from "@/components/Nav";
+import ScrollToTop from "@/components/ScrollUp";
 import { Button } from "@/components/ui/button";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import WhyChooseUs from "@/components/Wcu";
@@ -193,12 +194,8 @@ export default function Home() {
         <ContactSection />
       </section>
       <Footer />
+      <ScrollToTop/>
 
     </>
   );
 }
-
-
-
-
-

@@ -1,14 +1,17 @@
 import React from 'react';
 import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
   const socialIcons = [
-    { icon: Facebook, label: 'Facebook', href: '#' },
-    { icon: Twitter, label: 'Twitter', href: '#' },
-    { icon: Linkedin, label: 'LinkedIn', href: '#' },
-    { icon: Instagram, label: 'Instagram', href: '#' }
+    { icon: Facebook, label: 'Facebook', href: 'www.facebook.com/ozonehq' },
+    { icon: Twitter, label: 'Twitter', href: 'www.twitter.com/ozone_hq' },
+    { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/company/ozonehq' },
+    { icon: Instagram, label: 'Instagram', href: 'www.instagram.com/ozone_hq' }
   ];
+
+
 
   return (
     <footer className="max-w-7xl mx-auto px-8 pt-16 pb-8">
@@ -40,8 +43,14 @@ const Footer = () => {
           <h3 className="font-semibold mb-4">Contact Information</h3>
           <ul className="space-y-2">
             <li>+234 9084000008 </li>
-            <li>Info@YourCompany.Com</li>
-            <li>123 Greenway Drive, Abuja, Nigeria.</li>
+            <li>hello@myozone.co</li>
+            <li>
+
+              Coastal Highway Lewes, Delaware, County of Sussex. <br />
+              <br />
+
+              Jinifa Plaza, Samuel Ademulegun Street, Central Business District, Abuja.
+            </li>
           </ul>
         </div>
 
@@ -59,8 +68,10 @@ const Footer = () => {
       <div className="border-t pt-8">
         <div className="flex flex-col items-center space-y-8">
           {/* Logo */}
-          <div className="text-[80px] sm:text-[80px] md:text-[150px] lg:text-[300px] font-bold tracking-tighter">
-            Ozone
+          <div className="">
+
+            <Image src="/assets/footer-logo.png" alt="Ozone Logo" width={500} height={300} />
+
           </div>
 
           {/* Mission statement */}

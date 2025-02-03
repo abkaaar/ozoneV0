@@ -32,7 +32,7 @@ export default function ContactPage() {
                             <div>
                                 <Image src="/assets/icons/contact-icon-1.png" alt='contact-ozone' height={40} width={40} />
                                 <h2>Email</h2>
-                                <p>support@myozone.co</p>
+                                <p>hello@myozone.co</p>
                             </div>
                             <div>
                                 <Image src="/assets/icons/contact-icon-2.png" alt='contact-ozone' height={40} width={40} />
@@ -42,7 +42,11 @@ export default function ContactPage() {
                             <div>
                                 <Image src="/assets/icons/contact-icon-3.png" alt='contact-ozone' height={40} width={40} />
                                 <h2>Office Address</h2>
-                                <p>[Your Office Address] <br /> [City, State, Country]</p>
+                                <p>
+                                Coastal Highway Lewes, Delaware, County of Sussex. USA <br />
+              <br />
+
+              Jinifa Plaza, Samuel Ademulegun Street, Central Business District Abuja, Nigeria.</p>
                             </div>
                         </div>
                     </article>
