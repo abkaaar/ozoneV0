@@ -43,11 +43,14 @@ const Footer = () => {
           <h3 className="font-semibold mb-4">Contact Information</h3>
           <ul className="space-y-2">
             <li>+234 9084000008</li>
-            <li>hello@myozone.co</li>
-            <li>
+            <li>hello@ozonehq.co</li>
+            <li className=''> 
+              <Image src={'/assets/icons/us.png'} width={40} height={40} alt='us-icon' />
               Coastal Highway Lewes, Delaware, County of Sussex. <br />
-              <br />
-              Jinifa Plaza, Samuel Ademulegun Street, Central Business District, Abuja.
+            </li>
+            <li>
+            <Image src={'/assets/icons/nigeria.png'} width={40} height={40} alt='us-icon' />
+            Jinifa Plaza, Samuel Ademulegun Street, Central Business District, Abuja.
             </li>
           </ul>
         </div>
