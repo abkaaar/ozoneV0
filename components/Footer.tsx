@@ -43,7 +43,7 @@ const Footer = () => {
           <h3 className="font-semibold mb-4">Contact Information</h3>
           <ul className="space-y-2">
             <li>+234 9084000008</li>
-            <li>hello@ozonehq.co</li>
+            <li>support@ozonehq.co</li>
             <li className=''> 
               <Image src={'/assets/icons/us.png'} width={40} height={40} alt='us-icon' />
               Coastal Highway Lewes, Delaware, County of Sussex, USA. <br />

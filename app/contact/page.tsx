@@ -33,7 +33,7 @@ export default function ContactPage() {
                                 <Image src="/assets/icons/contact-icon-1.png" alt='contact-ozone' height={40} width={40} />
                                 <div>
                                     <h2>Email</h2>
-                                    <p>hello@ozonehq.co</p>
+                                    <p>support@ozonehq.co</p>
                                 </div>
                             </div>
                             <div className='flex items-center gap-2'>
