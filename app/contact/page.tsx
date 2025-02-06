@@ -29,23 +29,33 @@ export default function ContactPage() {
                             </h2>
                         </div>
                         <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-                            <div>
+                            <div className='flex items-center gap-2'>
                                 <Image src="/assets/icons/contact-icon-1.png" alt='contact-ozone' height={40} width={40} />
-                                <h2>Email</h2>
-                                <p>hello@myozone.co</p>
+                                <div>
+                                    <h2>Email</h2>
+                                    <p>hello@ozonehq.co</p>
+                                </div>
                             </div>
-                            <div>
+                            <div className='flex items-center gap-2'>
                                 <Image src="/assets/icons/contact-icon-2.png" alt='contact-ozone' height={40} width={40} />
+                                <div>
                                 <h2>Phone</h2>
                                 <p>09084000008</p>
+                                </div>
                             </div>
                             <div>
+                                <div className="flex items-center gap-2 mb-3">
                                 <Image src="/assets/icons/contact-icon-3.png" alt='contact-ozone' height={40} width={40} />
-                                <h2>Office Address</h2>
+                                <span>Office Address</span>
+                                </div>
                                 <p>
-                                Coastal Highway Lewes, Delaware, County of Sussex. USA <br />
-                                   <br />
-                                    Jinifa Plaza, Samuel Ademulegun Street, Central Business District Abuja, Nigeria.</p>
+                                    <Image src={'/assets/icons/us.png'} width={40} height={40} alt='us-icon' />
+                                    Coastal Highway Lewes, Delaware, County of Sussex, USA.
+                                </p>
+                                <p>
+                                    <Image src={'/assets/icons/nigeria.png'} width={40} height={40} alt='nigeria-icon' />
+                                    Jinifa Plaza, Samuel Ademulegun Street, Central Business District Abuja, Nigeria.
+                                </p>
                             </div>
                         </div>
                     </article>

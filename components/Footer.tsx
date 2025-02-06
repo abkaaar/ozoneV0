@@ -46,7 +46,7 @@ const Footer = () => {
             <li>hello@ozonehq.co</li>
             <li className=''> 
               <Image src={'/assets/icons/us.png'} width={40} height={40} alt='us-icon' />
-              Coastal Highway Lewes, Delaware, County of Sussex. <br />
+              Coastal Highway Lewes, Delaware, County of Sussex, USA. <br />
             </li>
             <li>
             <Image src={'/assets/icons/nigeria.png'} width={40} height={40} alt='us-icon' />
